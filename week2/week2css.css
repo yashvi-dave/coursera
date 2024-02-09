@@ -17,7 +17,8 @@ h1 {
 section {
     position: relative;
     padding: 15px;
-    width: 100%;
+    width:100%;
+   
 }
 
 p {
@@ -29,7 +30,7 @@ div {
     position: relative;
     background-color: gray;
     border: 1px solid black;
-    width: 100%;
+  width:100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
@@ -85,38 +86,45 @@ div {
     margin: 0px;
     height: 200px;
     overflow: auto;
+    width: 100%;
 }
 
 
 /*desktop version*/
 @media (min-width: 992px) {
-    .col4 {
+    .Column {
         float: left;
         width: 33.33%;
+    }
+    .Column3 {
+        width: 33.33%;
+        float: left;
     }
 }
 
 /*tablet version*/
 @media (min-width: 768px) and (max-width: 991px) {
-    .col1 {
+    .Column {
         float: left;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
-
-    .col2 {
-        float: left;
+    .Column3 {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        float: left;
     }
+     
 }
 
 /*mobile version*/
 @media (max-width: 767px) {
-    .col3 {
-        width: 80%;
+    .Column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .Column3 {
+        width: 100%;
         margin-bottom: 30px;
     }
 }
